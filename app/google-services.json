@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "259388064238",
+    "project_id": "emergency-services-locato",
+    "storage_bucket": "emergency-services-locato.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259388064238:android:08a2be7f2cf5604dfb0eff",
+        "android_client_info": {
+          "package_name": "com.example.emergencyserviceslocator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqv_n3tU1BM0__pYjxt6gL3rd7bKTsi88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

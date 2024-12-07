@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id= "@+id/my_map_api_key"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <!-- Added TextView for "Features" -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/uou" />
+
+
+    <Button
+        android:id="@+id/police_button"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center|end"
+        android:text="Police"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/Button6"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center|end"
+        android:text="FireFighter"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center|end"
+        android:text="Doctor"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.478"
+        app:srcCompat="@drawable/udoc" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+
+        android:layout_marginEnd="96dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Button6"
+        app:layout_constraintEnd_toEndOf="@+id/Button6"
+        app:layout_constraintTop_toTopOf="@+id/Button6"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/firefighter" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/police_button"
+        app:layout_constraintEnd_toEndOf="@+id/police_button"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="@+id/police_button"
+        app:layout_constraintTop_toTopOf="@+id/police_button"
+        app:layout_constraintVertical_bias="0.454"
+        app:srcCompat="@drawable/unpolice" />
+
+    <FrameLayout
+        android:id="@+id/framebox"
+        android:layout_width="315dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/round_warning_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:src="@drawable/udoc" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:src="@drawable/unpolice" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="10dp"
+            android:background="#000000"
+            android:src="@drawable/firefighter" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    >
+
+     <fragment
+         android:id="@+id/my_map_api_key"
+         android:name="com.google.android.gms.maps.SupportMapFragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         map:layout_constraintBottom_toBottomOf="parent"
+         map:layout_constraintEnd_toEndOf="parent"
+         map:layout_constraintStart_toStartOf="parent"
+         map:layout_constraintTop_toTopOf="parent" />
+
+     <Button
+         android:id="@+id/button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="116dp"
+         android:text="Button"
+         map:layout_constraintBottom_toBottomOf="@+id/my_map_api_key"
+         map:layout_constraintEnd_toEndOf="parent"
+         map:layout_constraintStart_toStartOf="parent" />
+
+     <!--     <SearchView-->
+<!--          android:id="@+id/mapSearch"-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="wrap_content"-->
+<!--          android:layout_margin="10dp"-->
+<!--          android:queryHint="Search..."-->
+<!--          android:iconifiedByDefault="false"-->
+<!--          android:elevation="5dp"-->
+<!--          android:background="@drawable/bg_search_view"-->
+<!--          map:layout_constraintStart_toStartOf="parent"-->
+<!--          map:layout_constraintEnd_toEndOf="parent"-->
+<!--          map:layout_constraintTop_toTopOf="parent"/>-->
+
+
+<!--     <TextView-->
+<!--         android:id="@+id/textView"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.102"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintTop_toTopOf="parent"-->
+<!--         app:layout_constraintVertical_bias="0.055"-->
+<!--         android:layout_width="148dp"-->
+<!--         android:layout_height="wrap_content"-->
+<!--         android:fontFamily="sans-serif-black"-->
+<!--         android:gravity="right"-->
+<!--         android:text="User_name"-->
+<!--         android:textAppearance="@style/TextAppearance.AppCompat.Display2"-->
+<!--         android:textColor="#FFFFFF"-->
+<!--         android:textSize="24sp"-->
+<!--         android:visibility="visible"-->
+<!--         map:layout_constraintBottom_toBottomOf="parent"-->
+<!--         map:layout_constraintEnd_toEndOf="parent"-->
+<!--         map:layout_constraintHorizontal_bias="0.06"-->
+<!--         map:layout_constraintStart_toStartOf="parent"-->
+<!--         map:layout_constraintTop_toTopOf="parent"-->
+<!--         map:layout_constraintVertical_bias="0.05" />-->
+
+<!--     <ImageView-->
+<!--         android:id="@+id/imageView"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.951"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintTop_toTopOf="parent"-->
+<!--         app:layout_constraintVertical_bias="0.027"-->
+<!--         app:srcCompat="@drawable/uou"-->
+<!--         android:layout_width="68dp"-->
+<!--         android:layout_height="58dp"-->
+<!--         map:layout_constraintBottom_toBottomOf="parent"-->
+<!--         map:layout_constraintEnd_toEndOf="@+id/my_map_api_key"-->
+<!--         map:layout_constraintHorizontal_bias="0.953"-->
+<!--         map:layout_constraintStart_toStartOf="@+id/my_map_api_key"-->
+<!--         map:layout_constraintTop_toTopOf="parent"-->
+<!--         map:layout_constraintVertical_bias="0.023" />-->
+
+<!--     <Button-->
+<!--         android:id="@+id/police_button"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.0"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintTop_toTopOf="parent"-->
+<!--         app:layout_constraintVertical_bias="0.132"-->
+<!--         android:layout_width="108dp"-->
+<!--         android:layout_height="39dp"-->
+<!--         android:layout_marginEnd="48dp"-->
+<!--         android:backgroundTint="@color/white"-->
+<!--         android:gravity="center|end"-->
+<!--         android:text="Police"-->
+<!--         android:textColor="@color/black"-->
+<!--         map:layout_constraintBottom_toBottomOf="parent"-->
+<!--         map:layout_constraintEnd_toEndOf="parent"-->
+<!--         map:layout_constraintTop_toTopOf="parent"-->
+<!--         map:layout_constraintVertical_bias="0.115" />-->
+
+<!--     <Button-->
+<!--         android:id="@+id/Button6"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.414"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintTop_toTopOf="parent"-->
+<!--         app:layout_constraintVertical_bias="0.132"-->
+<!--         android:layout_width="119dp"-->
+<!--         android:layout_height="39dp"-->
+<!--         android:backgroundTint="@color/white"-->
+<!--         android:gravity="center|end"-->
+<!--         android:text="FireFighter"-->
+<!--         android:textColor="@color/black"-->
+<!--         map:layout_constraintBottom_toBottomOf="parent"-->
+<!--         map:layout_constraintEnd_toStartOf="@+id/police_button"-->
+<!--         map:layout_constraintHorizontal_bias="0.889"-->
+<!--         map:layout_constraintStart_toStartOf="parent"-->
+<!--         map:layout_constraintTop_toTopOf="parent"-->
+<!--         map:layout_constraintVertical_bias="0.115" />-->
+
+<!--     <Button-->
+<!--         android:id="@+id/button5"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.796"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintTop_toTopOf="parent"-->
+<!--         app:layout_constraintVertical_bias="0.132"-->
+<!--         android:layout_width="101dp"-->
+<!--         android:layout_height="39dp"-->
+<!--         android:backgroundTint="@color/white"-->
+<!--         android:gravity="center|end"-->
+<!--         android:text="Doctor"-->
+<!--         android:textColor="@color/black"-->
+<!--         map:layout_constraintEnd_toEndOf="parent"-->
+<!--         map:layout_constraintHorizontal_bias="0.051"-->
+<!--         map:layout_constraintStart_toStartOf="parent"-->
+<!--         tools:layout_editor_absoluteY="80dp" />-->
+
+<!--     <Button-->
+<!--         android:id="@+id/phone_num"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.918"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintTop_toTopOf="parent"-->
+<!--         app:layout_constraintVertical_bias="0.944"-->
+<!--         android:layout_width="118dp"-->
+<!--         android:layout_height="60dp"-->
+<!--         android:layout_marginBottom="32dp"-->
+<!--         android:text="+"-->
+<!--         map:layout_constraintBottom_toBottomOf="parent"-->
+<!--         map:layout_constraintEnd_toEndOf="parent"-->
+<!--         map:layout_constraintHorizontal_bias="0.904"-->
+<!--         map:layout_constraintStart_toStartOf="parent" />-->
+
+<!--     <ImageView-->
+<!--         android:id="@+id/imageView3"-->
+<!--         app:layout_constraintBottom_toBottomOf="@+id/button5"-->
+<!--         app:layout_constraintEnd_toEndOf="@+id/button5"-->
+<!--         app:layout_constraintHorizontal_bias="0.126"-->
+<!--         app:layout_constraintStart_toStartOf="@+id/button5"-->
+<!--         app:layout_constraintTop_toTopOf="@+id/button5"-->
+<!--         app:layout_constraintVertical_bias="0.478"-->
+<!--         app:srcCompat="@drawable/udoc"-->
+<!--         android:layout_width="25dp"-->
+<!--         android:layout_height="25dp"-->
+<!--         map:layout_constraintBottom_toBottomOf="@+id/button5"-->
+<!--         map:layout_constraintEnd_toEndOf="@+id/button5"-->
+<!--         map:layout_constraintHorizontal_bias="0.118"-->
+<!--         map:layout_constraintStart_toStartOf="@+id/button5"-->
+<!--         map:layout_constraintTop_toTopOf="@+id/button5"-->
+<!--         map:layout_constraintVertical_bias="0.571" />-->
+
+<!--     <ImageView-->
+<!--         android:id="@+id/imageView5"-->
+<!--         app:layout_constraintBottom_toBottomOf="@+id/Button6"-->
+<!--         app:layout_constraintEnd_toEndOf="@+id/Button6"-->
+
+<!--         app:layout_constraintTop_toTopOf="@+id/Button6"-->
+<!--         app:layout_constraintVertical_bias="0.529"-->
+<!--         app:srcCompat="@drawable/firefighter"-->
+<!--         android:layout_width="20dp"-->
+<!--         android:layout_height="22dp"-->
+<!--         map:layout_constraintBottom_toBottomOf="@+id/Button6"-->
+<!--         map:layout_constraintEnd_toEndOf="@+id/Button6"-->
+<!--         map:layout_constraintHorizontal_bias="0.08"-->
+<!--         map:layout_constraintStart_toStartOf="@+id/Button6"-->
+<!--         map:layout_constraintTop_toTopOf="@+id/Button6"-->
+<!--         map:layout_constraintVertical_bias="0.529" />-->
+
+<!--     <ImageView-->
+<!--         android:id="@+id/imageView7"-->
+<!--         app:layout_constraintBottom_toBottomOf="@+id/police_button"-->
+<!--         app:layout_constraintEnd_toEndOf="@+id/police_button"-->
+<!--         app:layout_constraintHorizontal_bias="0.192"-->
+<!--         app:layout_constraintStart_toStartOf="@+id/police_button"-->
+<!--         app:layout_constraintTop_toTopOf="@+id/police_button"-->
+<!--         app:layout_constraintVertical_bias="0.454"-->
+<!--         app:srcCompat="@drawable/unpolice"-->
+<!--         android:layout_width="25dp"-->
+<!--         android:layout_height="25dp"-->
+<!--         map:layout_constraintBottom_toBottomOf="@+id/police_button"-->
+<!--         map:layout_constraintEnd_toEndOf="@+id/police_button"-->
+<!--         map:layout_constraintHorizontal_bias="0.12"-->
+<!--         map:layout_constraintStart_toStartOf="@+id/police_button"-->
+<!--         map:layout_constraintTop_toTopOf="@+id/police_button" />-->
+
+<!--     <FrameLayout-->
+<!--         android:id="@+id/framebox"-->
+<!--         app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         app:layout_constraintHorizontal_bias="0.085"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         android:layout_width="224dp"-->
+<!--         android:layout_height="60dp"-->
+<!--         android:background="@drawable/round_warning_24"-->
+<!--         map:layout_constraintBottom_toBottomOf="parent"-->
+<!--         map:layout_constraintEnd_toEndOf="@+id/my_map_api_key"-->
+<!--         map:layout_constraintHorizontal_bias="0.085"-->
+<!--         map:layout_constraintStart_toStartOf="parent"-->
+<!--         map:layout_constraintTop_toTopOf="parent"-->
+<!--         map:layout_constraintVertical_bias="0.961">-->
+
+<!--          <ImageButton-->
+<!--              android:id="@+id/imageButton1"-->
+<!--              android:layout_width="50dp"-->
+<!--              android:layout_height="50dp"-->
+<!--              android:layout_gravity="end|center"-->
+<!--              android:layout_marginRight="10dp"-->
+<!--              android:background="#000000"-->
+<!--              android:src="@drawable/udoc" />-->
+
+<!--          <ImageButton-->
+<!--              android:id="@+id/imageButton2"-->
+<!--              android:layout_width="50dp"-->
+<!--              android:layout_height="50dp"-->
+<!--              android:layout_gravity="center"-->
+<!--              android:background="#000000"-->
+<!--              android:src="@drawable/unpolice" />-->
+
+<!--          <ImageButton-->
+<!--              android:id="@+id/imageButton3"-->
+<!--              android:layout_width="50dp"-->
+<!--              android:layout_height="50dp"-->
+<!--              android:layout_gravity="center|start"-->
+<!--              android:layout_marginLeft="10dp"-->
+<!--              android:background="#000000"-->
+<!--              android:src="@drawable/firefighter" />-->
+<!--     </FrameLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
